@@ -1,1 +1,7 @@
-ReactDOM.render(<h1>Hello World</h1>, document.getElementById('root'));
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+const element = <Welcome name="Yahya" />;
+
+ReactDOM.render(element, document.getElementById('root'));
